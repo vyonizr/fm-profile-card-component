@@ -5,3 +5,18 @@
 a {
   @apply underline hover:no-underline;
 }
+
+@layer components {
+	.spinning {
+		animation: 3s linear 0s infinite spinning;
+	}
+}
+
+@keyframes spinning {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
