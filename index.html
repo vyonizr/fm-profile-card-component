@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Profile card component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body
+    class="flex h-screen w-screen flex-col items-center justify-center bg-[hsl(185,_75%,_39%)]"
+  >
+    <img
+      class="absolute -left-[270px] -top-[220px] rotate-[135deg] scale-150"
+      src="./images/bg-pattern-top.svg"
+      alt="background pattern"
+    />
+    <img
+      class="absolute -bottom-[220px] -right-[270px] rotate-[45deg] scale-150"
+      src="./images/bg-pattern-bottom.svg"
+      alt="background pattern"
+    />
+    <main
+      class="z-10 w-[326px] overflow-hidden rounded-2xl bg-white font-kumbh text-[hsl(229,_23%,_23%)] drop-shadow-xl"
+    >
+      <img
+        src="./images/bg-pattern-card.svg"
+        alt="card pattern"
+        class="h-[140px] w-full object-cover"
+      />
+      <div class="relative">
+        <img
+          src="./images/image-victor.jpg"
+          alt="victor"
+          class="absolute -top-1/2 left-1/2 h-[96px] w-[96px] -translate-x-1/2 -translate-y-1/2 transform rounded-full border-[5px] border-white"
+        />
+      </div>
+      <div class="mt-[72px] flex justify-center text-lg">
+        <strong class="font-bold">Victor Crest</strong>
+        <p class="ml-[0.531rem] text-[hsl(227,_10%,_46%)]">26</p>
+      </div>
+      <p class="mt-2 text-center text-sm text-[hsl(227,_10%,_46%)]">London</p>
+      <hr class="mt-6" />
+      <div class="grid grid-cols-3 px-[42.5px] py-[27px] pt-6">
+        <div class="flex flex-col items-center">
+          <strong>80K</strong>
+          <p class="text-[10px] tracking-[1.5px] text-[hsl(227,_10%,_46%)]">
+            Followers
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <strong>803K</strong>
+          <p class="text-[10px] tracking-[1.5px] text-[hsl(227,_10%,_46%)]">
+            Likes
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <strong>1.4K</strong>
+          <p class="text-[10px] tracking-[1.5px] text-[hsl(227,_10%,_46%)]">
+            Photos
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution text-white">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/vyonizr" target="_blank"
+        >vyonizr</a
+      >.
+    </footer>
+  </body>
+</html>
